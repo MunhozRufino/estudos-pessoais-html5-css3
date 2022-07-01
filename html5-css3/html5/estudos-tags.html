@@ -15,7 +15,7 @@
     </p>
     <p>
         As tags também podem ter atributos e valores, que vão configurar seu comportamento conforme exemplo: <br>
-        <img src="../html5-css3/Imagens/tags-atributos-valores-parametros.PNG" alt="Exemplo">
+        <img src="../Imagens/tags-atributos-valores-parametros.PNG" alt="Exemplo">
     </p>    
     <p>
         Uma mesma tag pode ter vários parâmetros, cada um com seu valor. Entretanto, algumas tagas não possuem a necessidade de contúdo interno e por isso não possuem fechamento. É o caso, por exemplo, das tags &lt;br&gt; e &lt;img&gt;.
@@ -33,38 +33,49 @@
     <h3>&lt;!DOCTYPE html&gt;</h3>
         <p>
             Esta tag devfine o tipo de documento, no HTML5 temos apenas um tipo. É aqui que o navegador entende o tipo de documento e como ele deve interpretar as tags nele contidas.
-            <p><img src="../html5-css3/Imagens/estrutura-doctype.PNG" alt="Estrutura-doctype"></p>
+            <p><img src="../Imagens/estrutura-doctype.PNG" alt="Estrutura-doctype"></p>
         </p>
 
-    <h3>&lt;html>&lt;/html&gt;</h3>
-        <p>
-            Esta tag especifica que a página foi escrita em HTML. Aparece na primeira linha da pagina, sendo utilizada principalmente para mostra que a página usa HTML5
-        </p>
+    <div class="conteiner">
+        <div class="box">
+            <h3>&lt;html>&lt;/html&gt;</h3>
+                <p>
+                    Esta tag especifica que a página foi escrita em HTML. Aparece na primeira linha da pagina, sendo utilizada principalmente para mostra que a página usa HTML5
+                </p>
+        </div>
+        <div class="box">
+            <h3>&lt;html lang=""&gt;</h3>
+                <p>
+                    Esta variável "lang=" define qual sera a linguagem utilizada.
+                </p>
+        </div>
+        <div class="box">
+            <h3>&lt;meta&gt;</h3>
+                <p>
+                    Esta é a tag do meta da página. Pode ser útil para mencionar o autor da página, pelavras-chave, datas de publicação original, etc.
+                </p>
+        </div>
+        <div class="box">
+            <h3>&lt;link favicon&gt;</h3>
+                <p>
+                    Nesta tag ao inserir no href="" o destino de uma imagem (preferêncialmente no formato ico) será definido o icone da barra de navegação.
+                </p>
+        </div>
+        <div class="box">
+            <h3>&lt;title&gt;&lt;/title&gt;</h3>
+            <p>
+                Esta tag contém o título/nome da página. Você pode ver isso na barra de navegação do navergador para qualquer página aberta. Mecanismos de busca utilizam esta tag para extrair o assunto da página. o que é bastante conveniente para ranqueamento.
+            </p>
+        </div>
+        <div class="box">
+            <h3>&lt;head&gt;&lt;/head&gt;</h3>
+                <p>
+                    Esta tag é utilizada para especificar dados meta sobre a página. Ela inclui o nome da página, suas dependências (JS e scripts CSS), uso de fonte, etc.
+                </p>
+        </div>
+     </div>
 
-    <h3>&lt;html lang=""&gt;</h3>
-        <p>
-            Esta variável "lang=" define qual sera a linguagem utilizada. 
-        </p>
-
-    <h3>&lt;meta&gt;</h3>
-        <p>
-            Esta é a tag do meta da página. Pode ser útil para mencionar o autor da página, pelavras-chave, datas de publicação original, etc.
-        </p>
-
-    <h3>&lt;link favicon&gt;</h3>
-        <p>
-            Nesta tag ao inserir no href="" o destino de uma imagem (preferêncialmente no formato ico) será definido o icone da barra de navegação. 
-        </p> 
-
-    <h3>&lt;title&gt;&lt;/title&gt;</h3>
-        <p>
-            Esta tag contém o título/nome da página. Você pode ver isso na barra de navegação do navergador para qualquer página aberta. Mecanismos de busca utilizam esta tag para extrair o assunto da página. o que é bastante conveniente para ranqueamento.
-        </p>
-    
-    <h3>&lt;head&gt;&lt;/head&gt;</h3>
-        <p>
-            Esta tag é utilizada para especificar dados meta sobre a página. Ela inclui o nome da página, suas dependências (JS e scripts CSS), uso de fonte, etc.
-        </p>
+   
         
     <h3>&lt;body&gt;&lt;/body&gt;</h3>
         <p>
@@ -287,9 +298,9 @@
             Segue exemplo de aplicação com &lt;picture&gt; e &lt;source&gt;:
         </p>
         <picture>
-            <source media="(max-width: 750px)" srcset="../exercícios/ex011/imagens/foto-p.png" type="image/png">
-            <source media="(max-width: 1050px)" srcset="../exercícios/ex011/imagens/foto-m.png" type="image/png">
-            <img src="../exercícios/ex011/imagens/foto-g.png" alt="imagem flexível">
+            <source media="(max-width: 750px)" srcset="../imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="../imagens/foto-m.png" type="image/png">
+            <img src="../imagens/foto-g.png" alt="imagem flexível">
         </picture>
         <!--A ordem de tamanho tem que ser em sequência da maior para menor com referência a tag img-->
 
@@ -306,11 +317,11 @@
             Segue exemplo de aplicação com &lt;audio&gt; e &lt;source&gt;:
         </p> 
         <audio preload="metadata" controls loop> <!--usar autoplay se necessário-->
-            <source src="../exercícios/ex011/midia/casa-vega-yeti-music-main-version-01-49-3026.mp3" type="audio/mpeg">
-            <source src="../exercícios/ex011/midia/casa-vega-yeti-music-main-version-01-49-3026.ogg" type="audio/ogg">
-            <source src="../exercícios/ex011/midia/casa-vega-yeti-music-main-version-01-49-3026.wav" type="audio/wav">
+            <source src="../Imagens/casa-vega-yeti-music-main-version-01-49-3026.mp3" type="audio/mpeg">
+            <source src="../Imagens/casa-vega-yeti-music-main-version-01-49-3026.ogg" type="audio/ogg">
+            <source src="../Imagens/casa-vega-yeti-music-main-version-01-49-3026.wav" type="audio/wav">
             <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
-            <p><a href="../exercícios/ex011/midia/casa-vega-yeti-music-main-version-01-49-3026.mp3" download="audio/mpeg">Clique aqui para baixar o áudio.</a></p> 
+            <p><a href="../Imagens/casa-vega-yeti-music-main-version-01-49-3026.mp3" download="audio/mpeg">Clique aqui para baixar o áudio.</a></p> 
         </audio>
 
         <h3>&lt;video&gt;</h3>
@@ -334,7 +345,7 @@
         <p>
             Segue imagem abaixo destacando os navegadores e seus formatos de compatibilidade: 
         </p>
-        <img src="Imagens/compatibilidade-video.PNG" alt="navegadore-compatibilidade" width="350px">
+        <img src="../Imagens/compatibilidade-video.PNG" alt="navegadore-compatibilidade" width="350px">
         <p>
             Dica: Youtube e Vimeo são serviços para hospedagem de vídeos que vai evitar consumir nossos próprios recursos de host contratado. Cada um tem suas vantagens e desvantagens:
         </p>
@@ -349,5 +360,8 @@
             &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
         </p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h3>&lt;form&gt;</h3>
+        <p>O form é um elemento contêiner para diferentes tipos de elementos de entrada, como: campos de texto, caixas de seleção, botões de opção, botões de envio, etc.</p>
 </body>
 </html>

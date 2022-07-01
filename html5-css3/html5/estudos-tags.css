@@ -4,6 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2? family= Barlow+Semi+Condensed:wght@200 & família= Oswald:wght@200;300 &family= Sarabun:ital,wght@0,300;1,800 & display= troca');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f0f1f1;
     font-family: Sarabun, sans-serif;
@@ -40,6 +46,8 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 audio {
@@ -58,4 +66,21 @@ a {
     font-family: Sarabun, sans-serif;
     font-weight: 200;
     color: steelblue;
+}
+
+.conteiner {
+    max-width: 900px;
+    margin: auto;
+
+
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
 }
