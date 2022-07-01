@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../exercícios/icone-localizacao.ico" type="image/x-icon">
+    <title>Curso Tags</title>
+    <link rel="stylesheet" href="estudos-tags.css">
+</head>
+<body>
+    <h1>O que são tags HTML</h1>
+    <p>
+        O HTML baseia-se em marcações específicas chamdas tags. Uma tag é um conjunto de palavras entre sinais de cochetes angular "&lt;&gt;"
+    </p>
+    <p>
+        As tags também podem ter atributos e valores, que vão configurar seu comportamento conforme exemplo: <br>
+        <img src="../html5-css3/Imagens/tags-atributos-valores-parametros.PNG" alt="Exemplo">
+    </p>    
+    <p>
+        Uma mesma tag pode ter vários parâmetros, cada um com seu valor. Entretanto, algumas tagas não possuem a necessidade de contúdo interno e por isso não possuem fechamento. É o caso, por exemplo, das tags &lt;br&gt; e &lt;img&gt;.
+    </p>
+    <p>
+        Com o surgimento da versão 5 da HTML, algumas taggs simplesmente deixaram de existir ou tornaram-se obsoletas &#x26D4. Uma tag obsoleta pode até estar funcionando no seu navegador hoje em dia, mas a própria W3C - consórcio responsável por manter as especificações da liguagem - recomenda que elas não seja mais usadas pelos profissionais e aos poucos não serão mais suportadas pelos nevegadores nas suas futuras versões. 
+    </p>
+    <p>
+        Sempre que quiser saber quias são as tags que estão sendo consideradas obsoletas pelo W3C, basta consultar a referência oficial da linguagem, disponível no site abaixo e acessar o <strong>item 15: Obsolete Features</strong>. <br>
+        &rarr;&#x26D4<a href="https://www.w3.org/TR/2014/REC-html5-20141028/obsolete.html">Site W3C</a>
+    </p>
+    
+    <h2>Relação de tags utilizadas em curso.</h2>
+
+    <h3>&lt;!DOCTYPE html&gt;</h3>
+        <p>
+            Esta tag devfine o tipo de documento, no HTML5 temos apenas um tipo. É aqui que o navegador entende o tipo de documento e como ele deve interpretar as tags nele contidas.
+            <p><img src="../html5-css3/Imagens/estrutura-doctype.PNG" alt="Estrutura-doctype"></p>
+        </p>
+
+    <h3>&lt;html>&lt;/html&gt;</h3>
+        <p>
+            Esta tag especifica que a página foi escrita em HTML. Aparece na primeira linha da pagina, sendo utilizada principalmente para mostra que a página usa HTML5
+        </p>
+
+    <h3>&lt;html lang=""&gt;</h3>
+        <p>
+            Esta variável "lang=" define qual sera a linguagem utilizada. 
+        </p>
+
+    <h3>&lt;meta&gt;</h3>
+        <p>
+            Esta é a tag do meta da página. Pode ser útil para mencionar o autor da página, pelavras-chave, datas de publicação original, etc.
+        </p>
+
+    <h3>&lt;link favicon&gt;</h3>
+        <p>
+            Nesta tag ao inserir no href="" o destino de uma imagem (preferêncialmente no formato ico) será definido o icone da barra de navegação. 
+        </p> 
+
+    <h3>&lt;title&gt;&lt;/title&gt;</h3>
+        <p>
+            Esta tag contém o título/nome da página. Você pode ver isso na barra de navegação do navergador para qualquer página aberta. Mecanismos de busca utilizam esta tag para extrair o assunto da página. o que é bastante conveniente para ranqueamento.
+        </p>
+    
+    <h3>&lt;head&gt;&lt;/head&gt;</h3>
+        <p>
+            Esta tag é utilizada para especificar dados meta sobre a página. Ela inclui o nome da página, suas dependências (JS e scripts CSS), uso de fonte, etc.
+        </p>
+        
+    <h3>&lt;body&gt;&lt;/body&gt;</h3>
+        <p>
+            Tudo que o usuário vê é escrito dentro desta tag, que contém todos os conteúdos da pagina.
+        </p>
+
+    <h3>&lt;h1&gt;&lt;/h1&gt;</h3>
+        <p>
+            Está tag define a hierarquia de títulos possuindo seis variçãoes desde a &lt;h1&gt; até &lt;h6&gt;.
+        </p>
+
+    <h3>&lt;hr&gt;</h3>
+        <p>
+            Está tag cria uma linha horizontal sinalizando o fim da seção. Esta tag quebra as linhas como um paragrafo realizando separações.
+        </p>
+
+    <h3>&lt;p&gt;&lt;p/&gt;</h3>
+        <p>
+            Define um parágrafo sendo inserido textos sem formatação dentro desta tag.
+        </p>
+
+    <h3>&lt;br&gt;</h3>
+        <p>
+            Esta tag insere um quebra de linha simples dentro do parágrafo.
+        </p>
+
+    <h3>&lt;img src="" alt=""&gt;</h3>
+        <p>
+            A tag (img) é uma tag utilizada para inserir imagens onde dividimos em dois seguimentos:  src="será inserido o caminho do arquivo podendo se utilizado os seguintes atalhos Ctrl+Espaço ou ../""
+            alt="iremos inserir o nome resumido do arquivo"<br>
+            Podemos utilizar a tag (img) inserindo imagens da internet com a URL conforme demonstrado abaixo
+        </p>
+
+    <h3>Ctrl+Shift+P - Wrap with Abbreviation - Inserção de tags automaticamente</h3>
+        Selecione uma frase e pressione as teclas Ctrl+Shift+P será aberta uma janela onde você selecionará a seguinte opção "Wrap with Abbreviation", em seguida preencha a janela somente com o inicio da tag sem os colchetes &lt;&gt; e pressione enter. Será aplicada a tag automaticamente, o vscode deixa sempre o ultimo comando salvo na Janela podendo ser feito o procedimento rapidamente. 
+    
+    <h3>&lt;b&gt;</h3>
+        <p>
+            Está tag destaca um trecho do texto em NEGRITO, porém esta tag não e semântica, define apenas a forma  sendo utilizada no Html4. Lembrando que forma é aplicado em CSS. 
+        </p>
+        
+    <h3>&lt;strong&gt;</h3>
+        <p>
+            Esta tag destaca o trecho do texto em    NEGRITO de forma semântica, sendo recomendado ouso.
+        </p>
+
+    <h3>&lt;i&gt;</h3>
+        <p>
+            Esta tag destaca o trecho em ITÁLICO de forma não semântica, definindo apenas a forma  sendo utilizada no Html4
+        </p>
+
+    <h3>&lt;em&gt;</h3>
+        <p>
+            Esta tag destaca o treecho em ITÁLICO de formma semântica, sendo recomendado o uso
+        </p>
+
+    <h3>&lt;mark&gt;</h3>
+        <p>
+            Esta tag destaca um trecho na forma de marca texto na cor amarela. Esta cor pode ser mudada com parametro CSS style="background-color:" (prmeira maneira). Se quiser mudar o parâmetro de cor para todas as tags mark recomendo a insersão do parâmetro style dentro do &lt;head&gt; criando um seletor (segunda maneira).<br>
+            A tag &lt;mark&gt; pode não funcionar por ainda não ser reconhecida pelo vscode.
+        </p>
+    
+    <h3>&lt;big&gt;</h3>
+        <p>
+            Esta tag muda o tamanho do texto, porém ela esta obsoleta pela w3. Esta mudança de forma deve ser realizada em CSS.
+        </p>
+
+    <h3>&lt;small&gt;</h3>
+        <p>
+            Esta tag muda o tamanho do texto, está tag apesar de realizar a mudança de forma ainda e utilizada nos casos onde destacamos um texto em linhas pequenas, muito utilizado em anuncios e contratos. 
+        </p>
+
+    <h3>&lt;del&gt;</h3>
+        <p>
+            Esta tag deixa um trecho do texto taxado com uma linha horizontal, tal informação pode ser lida deixando claro que esta em desuso.
+        </p>
+    
+    <h3>&lt;ins&gt;</h3>
+        <p>
+            Esta tag deixa um trecho do texto sublinhado.
+        </p>
+        <p>
+            Também existe a tag &lt;u&gt; não semântica. Recomendo a utilização da tag &lt;ins&gt;
+        </p>
+    
+    <h3>&lt;sup&gt;</h3>
+        <p>
+            Esta tag deixa um trexo do texto sobrescrito conforme exemplo: x<sup>20</sup>+3
+        </p>
+    
+    <h3>&lt;sub&gt;</h3>
+        <p>
+            Esta tag deixa um trexo do texto subscrito conforme exemplo: H<sub>2</sub>O
+        </p>
+
+    <h3>&lt;pre&gt;</h3>
+        <p>
+            Esta tag é utilizada para representar texto pré-formatado. Um texto dentro desse elemento é tipicamente exibido em uma fonte não proporcional da mesma maneira em que o texto original foi disposto no arquivo. Espaços em branco são mantidos no texto da mesma forma em que este foi digitado. 
+        </p>
+    
+    <h3>&lt;code&gt;</h3>
+        <p>
+            Esta tag é utilizada para mostrar códigos scrippet dentro de um parágrafo conforme exemplo abaixo. Destaco que o código se encontra dentro de uma tag &lt;pre&gt; assim mantendo a formatação digitada e orientada conforme os espaçamentos.
+        </p>
+        <pre>
+            <code>
+                num = int(input('Digite um número'))
+                if num % 2 == 0:
+                    print(f'0 número {num} é PAR')
+                else:
+                    print(f'0 número {num} é ÍMPAR')
+                print('Fim do programa')
+            </code>
+        </pre>
+
+    <h3>&lt;q&gt;</h3>
+        <p>
+            Esta tag adiciona aspas &#34 &quot; diferente do código isolado, recomenda-se a utilização da tag &lt;q&gt; pois ela esta ligada ao sentido e não ao formato apenas. 
+        </p>
+
+    <h3>&lt;blockquote&gt;</h3>
+        <p>
+            Esta tag e utilizada para realizar citações, sendo utilizada em conjunto com o tag <q>cite</q>, nesta tag será inserida a referência ou link onde não será apresentado na execução do código, somente internamente. 
+        </p>
+        <p>Segue exemplo abaixo:</p>
+        <pre>
+        <blockquote cite="https://www.pensador.com/ayrton_senna_frases_inspiradoras/">
+            Quando penso que cheguei ao meu limite descubro que tenho forças para ir além.
+            Ayrton Senna da Silva
+        </blockquote>
+        </pre>
+    
+    <h3>&lt;abbr&gt;</h3>
+        <p>
+            Esta tag é utilizada em cima de abreviações onde ao passar o mouse será apresentada uma janela com o texto completo. Segue exemplo:
+        </p>
+        <p>
+            Estou estudando <abbr title="Hiper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.
+        </p>
+    
+    <h3>&lt;ol&gt;</h3>
+        <p>
+            Esta tag é utilizada para fazer listas ordenadas (1,2,3...), para ajustar a formatação da ordenação utilize o parametro type="" dentro da tag inserindo uma das opções: 1 A a I i.
+        </p>
+    
+    <h3>&lt;ul&gt;</h3>
+        <p>
+            Esta tag é utilizada para fazer listas não ordenadas, elas são sinalizadas com simbolos, para ajustar a formatação da lista utilize o parametro type="" dentro da tag inserindo uma das opções: disc, circle, square.
+        </p>
+        
+    <h3>&lt;li&gt;</h3>
+        <p>
+            Esta tag é utilizada dentro das tags de listas criando partes de uma lista (linhas).
+        </p>
+
+    <h3>&lt;dl&gt; &lt;dt&gt; &lt;dd&gt;</h3>
+        <ul>
+            <li>A tag &lt;dl&gt; é utilizada para listas de ítens com definições.</li>
+            <li>A tag &lt;dt&gt; é utilizada para definição de um único termo em linha com conteúdo</li>
+            <li>A tag &lt;dd&gt; é utilizada para aplicara a descrição do termo definido</li>
+        </ul>
+        <p>
+            Estas tags estão sendo apresntadas conforme exemplo abaixo: 
+        </p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para a criação de conteúdo de um site</dd>
+            <dt>CSS</dt>
+            <dd>Liguagem de marcação para a criação de design de um site</dd>
+            <dt>JavaScript</dt>
+            <dd>Liguagem de programação para a criação de interatividade de um site</dd>
+        </dl>
+
+    <h3>&lt;a href="">&lt;/a&gt;</h3>
+        <p>
+            Esta é uma tag utilizada em links externos, internos e para downloads. <br>
+            Dentro das as pas de href="" será inserido o link ou arquivo para download. <br> 
+            Insira dentro da tak o texto que será o acesso ao link. <br>
+            Ao utilizar os parametros target="_blank" e rel="external" dentro da tag você estara direcinando a abertura do link para outra aba do navegador.  
+        </p>
+        <p>
+            Segue exemplos abaixo onde podemos utilizar a tag de links de outra forma:
+        </p>
+        <p>
+            <a href="mailto:meuemail@email.com" rel="external">meuemail@email.com</a>
+        </p>
+        <p>
+            <a href="tel:3197547-1566" rel="external">3197547-1566</a>
+        </p>
+        <p>
+            Outro atributo bem útil da tag de âncora é o hreflang, que permite indicar qual é o idioma principal do site par onde o link está desviando o fluxo de navegação. Isso vai permitir avisar ao navegador e a softwares de tradução como lidar caso o visitante opte por traduzir automaticamento os conteúdos. 
+        </p>
+        <a href="https://www.youtube.com" hreflang="en" target="_blank" rel="external">Acesse o youtube aqui</a>
+        <p>
+            Outra forma de trabalhar os link e tranforma-los em links para downloads, segue abaixo exemplos de links com essa função: 
+        </p>
+        <ul>
+            <li><a href="../exercícios/ex010/livro/meulivro.pdf" target="_blank" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+            <li><a href="../exercícios/ex010/livro/meulivro.zip">Livro compactado em ZIP</a></li>
+        </ul>
+
+        <h3>&lt;picture&gt;</h3>
+        <p>
+            O elemento HTML <picture>permite exibir imagens diferentes para diferentes dispositivos ou tamanhos de tela.
+        </p>
+        <p>
+            Existem dois propósitos principais para o <picture>elemento:
+        </p> 
+        <ol>
+            <li>
+                <strong>Largura de banda:</strong> <br>
+                Se você tiver uma tela ou dispositivo pequeno, não é necessário carregar um arquivo de imagem grande. O navegador usará o primeiro <source> elemento com valores de atributo correspondentes e ignorará qualquer um dos elementos a seguir.
+            </li>
+            <li>    
+                <strong>Suporte ao formato:</strong> <br> 
+                Alguns navegadores ou dispositivos podem não suportar todos os formatos de imagem. Ao usar o <picture>elemento, você pode adicionar imagens de todos os formatos, e o navegador usará o primeiro formato que reconhecer e ignorará qualquer um dos seguintes elementos.
+            </li>
+        </ol>
+        <p>
+            Segue exemplo de aplicação com &lt;picture&gt; e &lt;source&gt;:
+        </p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="../exercícios/ex011/imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="../exercícios/ex011/imagens/foto-m.png" type="image/png">
+            <img src="../exercícios/ex011/imagens/foto-g.png" alt="imagem flexível">
+        </picture>
+        <!--A ordem de tamanho tem que ser em sequência da maior para menor com referência a tag img-->
+
+        <h3>&lt;audio&gt;</h3>
+        <p>
+            A tag &lt;audio&gt; é usada para incorporar conteúdo de som em um documento, como música ou outros fluxos de áudio.
+        </p>
+        <ul>
+            <li>A tag &lt;audio&gt; contém uma ou mais &lt;source&gt; tags com diferentes fontes de áudio. O navegador escolherá a primeira fonte que ele suporta.</li>
+            <li>O texto entre as tags &lt;audio&gt; e &lt;/audio&gt; só será exibido em navegadores que não suportam o &lt;audio&gt; elemento.</li>
+            <li>Existem três formatos de áudio suportados em HTML: MP3, WAV e OGG.</li>
+        </ul>
+        <p style="text-align: center;">
+            Segue exemplo de aplicação com &lt;audio&gt; e &lt;source&gt;:
+        </p> 
+        <audio preload="metadata" controls loop> <!--usar autoplay se necessário-->
+            <source src="../exercícios/ex011/midia/casa-vega-yeti-music-main-version-01-49-3026.mp3" type="audio/mpeg">
+            <source src="../exercícios/ex011/midia/casa-vega-yeti-music-main-version-01-49-3026.ogg" type="audio/ogg">
+            <source src="../exercícios/ex011/midia/casa-vega-yeti-music-main-version-01-49-3026.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
+            <p><a href="../exercícios/ex011/midia/casa-vega-yeti-music-main-version-01-49-3026.mp3" download="audio/mpeg">Clique aqui para baixar o áudio.</a></p> 
+        </audio>
+
+        <h3>&lt;video&gt;</h3>
+        <p>
+            A tag &lt;video&gt; é usada para incorporar conteúdo de vídeo em um documento, como um clipe de filme ou outros fluxos de vídeo.
+        </p>
+        <ul style="list-style-type:square ;">
+            <li>A tag &lt;video&gt; contém uma ou mais &lt;source&gt; tags com diferentes origens de vídeo. O navegador escolherá a primeira fonte que ele suporta.</li>
+            <li>O texto entre as tags &lt;video&gt; e &lt;/video&gt; só será exibido em navegadores que não suportam o elemento &lt;video&gt;.</li>
+            <li>Existem três formatos de vídeo suportados em HTML: MP4, WebM e OGG.</li>
+        </ul>
+        <p>
+            Antes de mais nada, vamos criar a tag &lt;video&gt; e configurar alguns atributos importantes: 
+        </p>
+        <ul>
+            <li><em>width</em> vai indicar a largura que o vídeo vai ter na tela. Nesse exemplo, 600px.</li>
+            <li><em>poster</em> configura uma imagem que vai aparecer como uma capa, enquanto o visitante não aperta o play para reproduzir o video.</li>
+            <li><em>controls</em> vai configurar se os controles não aparecerão, mas basta colocar a palabra controls na tag &lt;video&gt;.</li>
+            <li><em>autoplay</em> diz para o navegador se o vídeo vai começar a tocar automaticamente, assimq ue a página for carregada.</li>
+        </ul>
+        <p>
+            Segue imagem abaixo destacando os navegadores e seus formatos de compatibilidade: 
+        </p>
+        <img src="Imagens/compatibilidade-video.PNG" alt="navegadore-compatibilidade" width="350px">
+        <p>
+            Dica: Youtube e Vimeo são serviços para hospedagem de vídeos que vai evitar consumir nossos próprios recursos de host contratado. Cada um tem suas vantagens e desvantagens:
+        </p>
+        <ul>
+            <li>Youtube é o serviço de hospedagem de vídeos mais popular do mundo e é gerenciado pelo Google. Sua principal vantagem é que seus servidores são ultra rápidos. Por outro lado a ideia do Google é deixar todos os vídeos públicos e disponíveis, podendo ser uma dor de cabeça caso queira limitar o acesso.</li>
+            <li>Vimeo resolve o problema que apontamos anteriormente, permitindo limitar quem vai poder ver o vídeo, o que e especialmente vantajoso para quem quer cirar produtos em forma de vídeo. Como desvantagem deve ser paga uma taxa anual e seus algoritimos não sao tão eficientes quanto os do Youtube.</li>
+        </ul>
+        <p>
+            Outra técnica de inserir vídeos e copiando o &lt;iframe&gt; que será disponivel em alguma opção de compartilhar em sites como Youtube e Vimeo, veja o exemplo abaixo: 
+        </p>
+        <p>
+            &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

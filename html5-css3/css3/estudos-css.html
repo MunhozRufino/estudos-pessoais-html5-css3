@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../exercícios/Iconleak-Cerulean-Compass.ico" type="image/x-icon">
+    <title>Estudos CSS</title>
+    <link rel="stylesheet" href="estudos-css.css">
+    <style>
+        bod{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(255, 209, 249, 0.274);
+            color: rgb(255, 209, 243);
+        }
+        h{
+            color: rgb(185, 245, 188);
+        }
+    </style>
+    <!--Este é um exemplo de CSS internal onde podemos definir estilos de forma conjunto na mesma página. Retirei a ultima letra dos parametro para não ficarem ativados-->
+</head>
+<body styl="font-famil: Arial, Helvetica, sans-serif; colo:blue"> 
+<!--Este é um exemplo de CSS inline, utilizamos para definir estilos diretamente na tag. Retirei a ultima letra dos parametro para não ficarem ativados--> 
+    <header>
+        <h1>ESTUDOS REALIZADOS EM CSS</h1>
+        <h2>Cascading Style Sheets</h2>
+    </header>
+    <main>
+        <h2>CSS inline style</h2>
+        <p>Vamos começar pela técnica mais básica para aplicar estilos em áreas pontuais em nosso site, que é usando as CSS dentro de parâmetros de HTML5.</p>
+        <p class="observação"><strong>OBSERVAÇÃO:</strong> As configurações pontuais (HTML style dentro da tag) vão prevalecer sobre as configurações gerais (CSS style).</p>
+
+        <h2>CSS internal style</h2>
+        <p>Para aplicar estilos de forma mais dinâmica e prática, podemos adicionar uma tag &lt;style&gt; dentro da área &lt;head&gt; do nosso documento HTML local.</p>
+        <p class="observação"><strong>OBSERVAÇÃO:</strong> As configurações pontuais (HTML style dentro da tag) vão prevalecer sobre as configurações gerais (CSS style).</p>
+
+        <h2>CSS external style</h2>
+        <p>Manter as folhas de estilo fora do código HTML, além de uma maior organização faz com que tudo seja reaproveitado de maneira mais eficiente nas outras páginas  do nosso site. Para isso, utilizamos a tag &lt;link&gt; especialmente configurada para trabalhar com arquivos externos de estilo. Essa tag deve ser colocada dentro da área &lt;head&gt; do seu documento HTML.</p>
+
+        <h2>Qual técnica eu escolho para usar?</h2>
+        <p>Nesse cápitulo, aprendemos as três técnicas de uso de folhas de estilo em cascata: inline, interna e externa. Mas em que situações devemos escolher cada um dos formatos?</p>
+        <p>A técnica CSS inline style deve ser evitada ao máximo. Ela acaba deixando seu código meio confuso, misturando a parte HTML e CSS em uma mesma linha. Use apenas em configurações pontuais.</p>
+        <p>A técnica CSS internal style organiza melhor seu código, separando contúdo e estilo em duas áreas bem definidas do seu documento. Use essa técnica quando for criar páginas isoladas com estilos próprios, que não serão replicados em outras páginas. Opte també por essa técnica apenas se a quantidade de configurações de estilo for pequena/média.</p>
+        <p>Por fim, opte sempre pela técnica CSS external style sempre que seu estilo for usado em várias páginas dentro do seu site. Usando a tag &lt;link&gt; em várias páginas, você pode compartilhar o mesmo estilo entre elas e não vai precisar ficar alterando vários arquivos quando o seu cliente solicitar uma pequena mudança no tom de uma determinada cor.</p>
+        <p>De forma resumida, guarde isso na sua cabeça:</p>
+
+        <ul>
+            <li>CSS externo = use sempre que puder</li>
+            <li>CSS interno = use para pequenas configurações</li>
+            <li>CSS inline = procure evitar</li>
+        </ul>
+
+        <p class="observação"><strong>OBSERVAÇÃO:</strong> Ainda é possível utilizar as três técnicas em seu projeto.</p>
+        <p class="topico">Clique <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/12%20-%20Trabalhando%20com%20estilos.pdf" class="cor-link">aqui</a> para ter acesso ao matérial em pdf contendo as informações das CSS Inline, internal, external.</p>
+
+        <h2>Personalizando Seletores</h2>
+        <p>Vamos aprender a usar seletores de &lt;id&gt;(#) e class (.) de maneira eficiente.</p>
+        <p>Um id vai identificar um elemento único dentro da página atual. Essa identificação vai nos permitir criar um estilo especial para um elemento isolado. Já uma class vai identiricar uma classe à qual um ou mais elementos pertençam, compartilhando características em comum a todos os que façãm parte desse grupo</p>
+        <p><strong>SE LIGA NA REGRA:</strong> Em um mesmo documento HTML, só podemos usar um id para um único elemento, o que significa que não podemos ter dois elementos com um mesmo id dentro de uma mesma página. Porém, podemos atribuir um mesmo class para vários elementos que possuam essa mesma característica.</p>
+        <p><strong>MAIS UMA REGRA:</strong> Todo id em HTML é identificado nas CSS por um símbolo #. Toda class em HTML é identificada nas CSS por um ponto.</p>
+
+        <h2>Pseudo-classes e Pseudo-elementos</h2>
+        <p>Uma pseudo-classe CSS é uma palavra-chave adicionada às declarações de um seletor após um sinal de dois pontos e especificam um estado especial de um elemento.</p>
+        <p>Existem vários <strong>pseudo-classes</strong> para estilos, podemos citar: :hove, :visited, :active, :checked, :empty e :focus.</p>
+        <p>Já um pseudo-elemento CSS é uma palavra-chave adicionada às declarações de um seletor após dois sinais d edois pontos e permitem que você formate um pedaço específico do elemento referenciado.</p>
+        <p>Os principais <strong>pseudo-elementos</strong> usados nas CSS são: ::before, ::after, ::frist-latter, ::frist-line.</p>
+        <p>Vamos criar um exemplo bem simples e bastante usado para exemplificar o uso de pseudo-classes e pseudo-elementos:</p>
+        
+            <aside>
+                <h3>Personalizando um link com pseudo-classes</h3>
+                <h4>Passe o mause e veja a aplicação de uma pseudo-classe</h4>
+                <p>- Para aprender HTML5 e CSS3, acesse o <a href="#">GitHub do Guanabara</a>.</p>
+                <p>- Se quiser conhecer mais visite o site do <a href="#">Escritório do W3C no Brasil</a>.</p>
+                <p>- Para acompanhar os cursos, acesse o canal do <a href="#" class="especial">Curso em Video</a>.</p>
+            </aside>
+        
+        <h2>O que é uma Caixa?</h2>
+        <p>De forma simples e objetiva, badeado em um cnceito chamado "box model", a grande maioria dos elementos HTML que temos no nosso site são como caixas. Elas são containers que armazenam conteúdos ou até mesmo outras caixas.</p>
+        <p>Vamos analisar como uma caixa vai ser apresentada por todos os navegadores. Olhe atentamente o diagrama a seguir, que é extamente o já citado modelo de caixa:</p>
+        
+        <picture>
+            <source media="(max-width: 270px)" srcset="./Imagens/modelo-de-caixa-p.PNG">
+            <img src="./Imagens/modelo-de-caixa.PNG" alt="modelo-de-caixa">
+        </picture>
+
+        <p>Todo conteúdo possui uma largura (width) e uma altura (height) e a esse conjunto de propriedades, damos o nome de box-size (tamanho da caixa). O tamanho da caixa não inclui as medidas de padding, border, outline e margin.</p>
+        <p class="observação"><strong>OBSERVAÇÂO:</strong> Novidade das CSS3, exite a nova propriedade box-sizing onde podemos definir que as dimensões height e width não são medidas apenas a partir do conteúdo (content-box) e sim pela borda (border-box).</p>
+
+        <h3>Margens no automático:</h3>
+        <p>Um recurso que também vai ser muito usado e a centralização de blocos. Para que isso seja feito, devemos pedir que o navegador clacule automaticamente as margens da esquerda e da direita para que o bloco seja colocado no meio do navegador independente do tamanho da janela.</p>
+        <p>Para centralizar uma caixa, use a seguinte declaração no seu seletor: <mark>margin: auto;</mark></p>
+
+        <h2>Tipos de Caixa</h2>
+        <p>Dependendo do comportamento da caixa, podemos classificar um elemento em uma de duas categorias:</p>
+
+        <h3>Caixa do tipo block-level:</h3>
+        <p>Um elemento dito <em>block-level</em> sempre vai se iniciar em uma nova linha e vai ocupar a largura total do elemento onde ele está contido. Se não estiver contido em nenhuma outra caixa, ele vai ocupar 100% da largura do &lt;body&gt;.</p>
+        <p>O elemento block-level mais conhecido é o &lt;div&gt; e suas variações semânticas modernas da HTML5, como &lt;main&gt;, &lt;section&gt;, &lt;aside&gt;, etc.</p>
+        <p>Veja asseguir alguns outros elementos HTML que são block-level:</p>
+
+        <picture>
+            <img src="./Imagens/block-level.PNG" alt="block-level" class="tipos-de-caixa">
+        </picture>
+
+        <h3>Caixa do tipo inline-level:</h3>
+        <p>Um elemento do tipo inline-level não vai começar em uma nova linha, e sim no ponto exato onde foram definidos. E a largura dele vai ocupar apenas o tamanho relativo ao seu conteúdo.</p>
+        <p>Abaixo, listei alguns elementos inline-level usados pela HTML5:</p>
+
+        <picture>
+            <img src="Imagens/inline-level.PNG" alt="inline-level" class="tipos-de-caixa">
+        </picture>
+
+        <h2>Grouping Tags e Semantic Tags</h2>
+        <p>A linguagem HTML padrão tinha apenas duas tags de agrupamento genérico: a &lt;div&gt; e a &lt;span&gt;. A diferença básica entre elas é que a primeira é um elemeno agrupador do tipo block-level e o segndo é inline-level. No mais, eles agem exatamente da mesma maneira, servindo para juntar vários outros elementos HTML.</p>
+        <p>Com o surgimento da HTML5, surgiram as tags semânticas de agrupamento. Isso não significa que as &lt;div&gt; e &lt;span&gt; (agora chamadas de não semânticas) deixaram de existir ou ficaram obsoletas em breve, mas seu uso agora faz menos sentido, pois temos tags para dividir as partes do nosso documento HTML.</p>
+        
+            <article>
+            <h1>Vamos aprender a partir de agora os principais agregadores semânticos da HTML5:</h1>
+            <ul>
+                <li>Header:</li>
+                <p>Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos &lt;h1&gt; - &lt;h6&gt;e subtítulos. Podem também conter menus de navegação.</p>
+                <li>Nav:</li>
+                <p>Define uma área que possui os links de navegação pela estrutura de páginas que vão compor o website. Um &lt;nav&gt;pode estar dentro de um &lt;header&gt;.</p>
+                <li>Main:</li>
+                <p>É um agrupador usado para delimitar o conteúdo principal do nosso site. Normalmente concentra as seções, artigo e conteúdos periféricos.</p>
+                <li>Section:</li>
+                <p>Cria seções para sua página. Ela pode conter o contúdo diretamente no seu corpo ou dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação oficial da W3C "uma seção é um agrupamento temático de conteúdos, tipicamente com um cabeçalho".</p>
+                <li>Article:</li>
+                <p>Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma independente e dizemm respeito a um mesmo assunto. Podemos usar um &lt;articel&gt; para delimitar um post de blog ou fórum, uma notícia, etc.</p>
+                <li>Aside:</li>
+                <p>Delimita um conteúdo periférico e complementar aoconteúdo principal de um artigo ou seção. Normalmente um conteúdo &lt;aside&gt; está posicionado ao lado de um determinado texto ou até mesmo no meio dele.</p>
+                <li>Footer:</li>
+                <p>Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte diretamente do conteúdo nem é um conteúdo periférico ( o que caracterizaria um &lt;aside&gt;, mas possui informações sobre autoria do conteúdo, links adicionais, mapa do site, documentos relacionados.</p>
+            </ul>
+            </article>
+        <p>A seguir, vou criar uma proposta d eestrutura para um projeto de site. Não tome ela como a única possibilidade de criar o posicionamento d eelementos de agrupamento semântico.</p>
+        <p>Analise o diagrama do lado esquerdo e o código do lado direito da imagem acima. Veja a hierarquia entre os elementos e quais deles estão dentro um do outro.</p>
+
+        <picture>
+            <img src="Imagens/estrutura.PNG" alt="estrutura-projeto" class="estrutura-projeto">
+        </picture>
+
+        <h2>IMPORTANTE - Variáveis em CSS</h2>
+        <p>Vamos aprender a utilizar variáveis personalizadas com CSS para cadastrar os equemas de cores e fontes do nosso site e isso vai facilitar muit ona hora de efetura eventuais mudanças futuras.</p>
+        <p>Para criarmos variáveis para nossas configurações, devemos definir uma área de definições dentro do seu estilo para uma pseudo-classe chamada <strong>:root</strong>, que definem as configurações para a raiz de uma árvore, que vai servir para o documento interio. </p>
+        <p>Note que, pelas declarações criadas a baixo, definimos nove variáveis com as configurações de cores e fontes que definímos no início desse capítulo.</p>
+        
+        <picture>
+            <img src="Imagens/pseudo-classe-root.PNG" alt="pseudo-classe-root">
+            <img src="Imagens/root-body.PNG" alt="root-body">
+        </picture>
+
+        <p>A partir de agora, definir cores e fontes em nossos elementos HTML ficará extremamente mais fácil e personalizável utilizando a função var( ).</p>
+
+        <h2>Uso do seletor * em CSS</h2>
+        <p>Existe também um seletor especial das CSS que é o asterisco (*), ele tem uma função muito especial, pois basicamente ele aplica uma configuração padrão para TODOS os elementos do código HTML ao qual o estilo está sendo aplicado.</p>
+
+        <h2>Vídeos do YouTube mais flexíveis</h2>
+        <p>Aprendemos como deixar as imagens mais "flexíveis" usando a tag &lt;picture&gt;. Também aprendemos a adicionar vídeos usando várias técnicas, inclusive aquelas que estão hospedados em serviços especializados como Vimeo e YouTube.</p>
+        <p>O problema é que, quando incorporamos um vídeo do YouTube ou Vimeo, isso é feito através de uma tag &lt;iframe&gt; que já vem com as configurações d eum tamanho fixo e precisamos alterar isso para que nossa interface possa se tornar mais responsiva e adaptar o tamanho do vídeo dinamicamente, principalmente para telas pequenas.</p>
+        <p>Para isso, vamos colocar o &lt;iframe&gt;de incorporação dentro de uma &lt;div&gt; para que o vídeo esteja limitado dentro de um contêiner.</p>
+
+        <picture>
+            <img src="Imagens/div-video.PNG" alt="div-video">
+        </picture>
+
+        <p>A partir daí, vamos fazer configurações de estilo para os dois elementos:</p>
+
+        <picture>
+            <img src="Imagens/div-video-style.PNG" alt="div-video-style">
+        </picture>
+
+        <p>O que nos importa mais aqui é entender o funcionamento da propriedade <em>position</em>, que é a única que não vimos até aqui. O valor padrão para essa propriedade de posicionamento é <em>static</em>, que mantém a hierarquia conforme estabelecido no documento HTML. </p>
+        <p>Na &lt;div&gt;, nós colocamos o valor como <em>relative</em> para que seja considerado o posicionamento atual do elemento de divisão e que ele se mantenha adaptável para o caso de alteração no tamanho do navegador.</p>
+        <p>Já dentro do <em>iframe</em>, nós usamos o posicionamento <em>absolute</em> para que a &lt;div&gt; - que é o seu contêiner - torne-se o ponto de partida para o posicionamento do frame. A partir daí, podemos utilizar propriedades para configurar o deslocamento à esquerda (left) e ao topo (top) e seu tamanho em largura (width) e altura (height), todos em porcentagem de tela.</p>
+
+        <h2>O fundo não precisa ter só cor</h2>
+        <p>Em capitulos anteriores, aprendemos a aplicar cores sólidas ou degradê em qualquer elemento de caixa, Mas você não precisa se limitar a essa possibilidade e pode aplicara imagens ao fundo de qualquer elemento exibido visualmente em HTML. Vamos a um exemplo simples com três &lt;div&gt; no corpo de um documento:</p>
+
+        <picture>
+            <img src="Imagens/div-imagem-fundo.PNG" alt="div-imagem-fundo">
+        </picture>
+
+        <p>Agora vamos criar a configuração de estilo base para toda &lt;div&gt; que possui a classe <em>quadrado</em>:</p>
+
+        <picture>
+            <img src="Imagens/div-imagem-fundo-style.PNG" alt="div-imagem-fundo-style">
+        </picture>
+
+        <p>Com esse código aplicado, temos o seguinte resultado na tela:</p>
+
+        <picture>
+            <img src="Imagens/div-resultado.PNG" alt="div-resultado">
+        </picture>
+
+        <p>Agora vamos adicionar algumas configurações individualmente a cada quadrado, usando os identificadores diferentes entre eles:</p>
+
+        <picture>
+            <img src="Imagens/div-inline-block-style.PNG" alt="div-inline-block-style">
+        </picture>
+
+        <p>Note que na definição da &lt;div&gt; que tem o <em>id</em> com o valor <em>q1</em>, usamos uma cor sólida, já para <em>q2</em>, usamos um preenchimento linear. Já na caixa <em>q3</em>, vamos aplicar uma imagem de fundo através de um endereço informado pela função <em>url()</em>.</p>
+        <p>Ao adicionar as linhas acima ao código, o resultado já muda consideravelmente:</p>
+
+        <picture>
+            <img src="Imagens/div-style-resultado.PNG" alt="div-style-resultado">
+        </picture>
+
+        <p>De forma geral, essas são as três maneiras mais simples de preencher uma caixa em HTML: cor sólida, degradê ou imagem de fundo.</p>
+
+        <h2>E não se esqueça: o body é uma grande caixa</h2>
+        <p>Esse recurso também pode ser usado ao &lt;body&gt; do seu site e o papel de parede será aplicado. Vamos considerar um exemplo bem simples que usa uma imagem disponível no nosso repositório.</p>
+
+        <picture>
+            <img src="Imagens/body-papel-de-parede.PNG" alt="body-papel-de-parede" style="max-width: 670px">
+        </picture> 
+
+        <p>Analisando o código acima, estamos usando uma <em>url()</em>, já que a imagem estará em outro servidor (no caso, no servidor do GitHub). A imagem em questão é razoavelmente pequena, então não vai ser suficiente para cobrir toda a tela. Sendo assim, o resultado será o seguinte:</p>
+
+        <picture>
+            <img src="Imagens/body-papel-aplicado.PNG" alt="body-papel-aplicado">
+        </picture>
+
+        <h3>Personalizando a aplicação do bacground</h3>
+        <p>Quando o tamanho da caixa é maior que o tamanho da imagem, por padrão, a imagem será <strong>repetida</strong> nos dois eixos (eixo x e eixo y) quantas vezes for necessário para cobrir a extensão da caixa contêiner.</p>
+        <p>É possível alterar esse comportamento usando a propriedade <em>bacground-repeat</em>, que aceita os seguintes valores:</p>
+
+        <picture>
+            <img src="Imagens/body-papel-personalizacao.PNG" alt="body-papel-personalizacao">
+        </picture>
+
+        <p>Note que ao usar o <em>no-repeat</em>, isso <strong>não obriga</strong> o navegador a aumentar ou diminuir o tamanho da imagem para caber no tamanho da caixa. Para realizar essa adaptação, devemos usar outra propriedade, que veremos mais adiante.</p>
+        <p>Além de escolher o nível de repetição do background, também podemos mudar a <strong>posicção de referência</strong> de início das repetições. Por padrão, é considerado o canto esquerdo superior (left top), mas podemos ter várias opções. Use a imagem abaixo como referência sempre que precisar definir a posição do fundo com a propriedade bacground- position no seu código.</p>
+
+        <picture>
+            <img src="Imagens/body-background-referencia.PNG" alt="body-background-referencia">
+        </picture>
+
+        <p>Outra coisa que podemos fazer é <strong>redimensionar</strong> a imagem para forçá-la a caber na caixa. Por padrão, nenhum redimensionamento será aplicado, e a imagem será exibida do seu tamanho natural. Porém, podemos usar a propriedade background-size para laterar esse comportamento.</p>
+        <p>Os valores aceitos por essa propriedade são:</p>
+
+        <picture>
+            <img src="Imagens/body-papel-redimensionar.PNG" alt="body-papel-redimensionar" style="max-width: 570px">
+        </picture>
+
+        <p>A última propriedade que podemos configurar é o <strong>vínculo</strong> (<em>attachment</em>) da imagem de fundo com o resto do documento, principalmente se o conteúdo for maior do que a altura da página e seja necessário vazer uma rolagem vertical.</p>
+        <p>Propriedade <em>background-attachment</em> aceita os valores:</p>
+
+        <picture>
+            <img src="Imagens/body-propriedade-attachment.PNG" alt="body-propriedade-attachment" style="max-width: 570px">
+        </picture>
+
+        <h2>Simplificando as coisas</h2>
+        <p>Assim como já vimos várias vezes em nosso materia, existe também a possibilidadede de usar uma <em>shorthand</em> para simplificar o uso de propriedades que se apliquem ao fundo de uma caixa. A propriedade abreviada <em>background</em> pode ser declarada agrupando as seguintes configurações:</p>
+
+        <ul>
+            <li>background-color</li>
+            <li>background-image</li>
+            <li>background-position</li>
+            <li>background-repeat</li>
+            <li>background-attachment</li>
+        </ul>
+
+        <p>Sendo assim, no lugar de usar:</p>
+
+        <picture>
+            <img src="Imagens/simplificando-style.PNG" alt="simplificando-style" style="max-width: 370px">
+        </picture>        
+
+        <p>Podemos reunir tudo em uma única declaração:</p>
+
+        <picture>
+            <img src="Imagens/simplificando-style2.PNG" alt="simplificando-style" style="max-width: 470px">
+        </picture>
+
+
+
+    </main>
+
+    <footer>
+        <p>Entre no meu <a href="https://github.com/MunhozRufino">Github</a> e veja outros projetos legais.</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades das CSS</title>
+</head>
+<body>
+    <h1>Relação de Propriedades CSS3</h1>
+    <p>Vamos destacar todas as propriedades e valores aplicados nas CSS com explicações simples.</p>
+
+    <h2>PROPRIEDADES GERAIS</h2>
+
+    <h3>style</h3>
+    <p>Existem duas formas de aplicar o <strong>style</strong>, em estilos inline e internal. Desta forma iremos aplicar estilos em locais especificos ou a vários elementos no mesmo html.</p>
+
+    <h3>link:css</h3>
+    <p>Define um link para aplicação de folhas de estilos externa, este é uma das melhores maneiras de aplicar css3 em html, facilitando a manutenção futura.</p>
+
+    <h3>heigt</h3>
+    <p>Define qual será a altura do elemento selecionado, podendo ser o espaçamento de um texto, altura de uma div, section, aside dentre outros. Pode ser aplicado em porcentagem, px, vh.</p>
+
+    <h3>width</h3>
+    <p>Define a largura do elemento selecionado, pode ser utilizados os valores de px, em, %, vw.</p>
+    <p><em>width: 600px;</em></p>
+
+    <h3>content</h3>
+    <p>A propriedade content é usada com os pseudoelementos ::before e ::after , para inserir o conteúdo gerado.</p>
+
+    
+
+    <h2>PROPRIEDADES DE CAIXA</h2>
+
+    <h3>padding</h3>
+    <p>Esta propriedade aplica o preenchimento de um elemento criando o espaço entre seu contúdo e sua borda, segue exemplo:</p>
+    <p><em>padding: 10px;</em></p>
+
+    <h3>margin</h3>
+    <p>Esta propriedade cria espaço extre ao redor do elemento fora da borda.</p>
+    <p><em>margin: auto;</em></p>
+
+    <h3>border-radius</h3>
+    <p>Este atributo aplica um arredondamento na caixa selecionada conforme exemplo abaixo:</p>
+    <p><em>border-radius: 10px;</em></p>
+    <p>Observação: Podem ser aplicados até quatro valores sendo em sentido horário que correspondem a cada lado da caixa. Ao selecionar apenas um valor conforme exemplo acima, esta configuração será aplicado a todos os lados.</p>
+
+    <h3>box-shadow</h3>
+    <p>Aplica uma sombra na caixa selecionada, devendo ser aplicado os seguinte valores conforme exemplo abaixo:</p>
+    <p><em>box-shadow: 5px 5px 15px gray;</em></p>
+
+    <h3>display</h3>
+    <p>A propriedade display especifica o comportamento de exibição (o tipo de caixa de renderização) de um elemento.</p>
+    <p>Exemplo de alguns valores de exibição diferentes: <em>{display: none;}, {display: inline;}, {display: block;}, {display: inline-block;}</em>.</p>
+    <p>Alguns exemplos de valores:</p>
+    <ul>
+        <li>inline:</li>
+            <p>Exibe um elemento como um elemento embutido (como &lt;span&gt;). Quaisquer propriedades de altura e largura não terão efeito.</p>
+        <li>block</li>
+            <p>Exibe um elemento como um elemento de bloco (como &lt;p&gt;). Começa em uma nova linha e ocupa toda a largura.</p>
+        <li>flex</li>
+            <p>Displays an element as a block-level flex container.</p>
+    </ul>
+
+    <h3>border-style</h3>
+    <p>A propriedade border-style define o estilo das quatro bordas de um elemento. Esta propriedade pode ter de um a quatro valores.</p>
+
+    <h3>outline</h3>
+    <p>A proriedade outline aplica uma linha que é desenhada em torno de elementos, fora das bordas, para fazer o elemento "se destacar".</p>
+    <p>A outline é uma propriedade abreviada para:largura do contorno, estilo de contorno (obrigatório),cor de contorno</p>
+
+
+
+    <h2>PROPRIEDADES DE CORES</h2>
+
+    <h3>color</h3>
+    <p>Define a cor do elemento selecionado, diferente do background, o atributo color altera a cor do objeto não do entorno dele.</p>
+    <p>A definição de cor vem de três cores bases, red, green e blue, essas cores trabalhadas em conjunto com diferentes valores definem nossas paletas de cores.</p>
+    <p>A representação das cores podem ser aplicadas da seguinte forma:</p>
+    <ul>
+        <li>Representação por nomes: <em>black, blue, red, etc...</em></li>
+        <li>Representação por códigos Hexadecimais: <em>#35b7de, #c9f8ff</em>.</li>
+        <p>Estes códigos possuem a estrutura de 6 digitos, os dois primeiros referem-se ao red, em seguinda os dois greens, e por ultimo os dois blue. Podendo ser numeros e letras na seguinte sequência: 0 1 2 3 4 5 6 7 8 9 A B C D F</p>
+        <li>Representaçaõ por RGB: sendo aplicado da seguinte forma <em>rgb(213, 165, 245)</em>.</li>
+        <p>Para definir as cores em rgb utilizamos três elementos (red,green,blue) com valores aplicados até 255. Ao aplcar valores diferentes em cada um dos tres elementos será apresentada uma cor expecífica.</p>
+    </ul>
+
+    <h3>background-color</h3>
+    <p>Ao aplicar esta propriedade será aplicado a cor de fundo no elemento selecionado, podendo ser uma palavra ou body, div, section dentre outros.</p>
+
+    <h3></h3>
+    <p>Esta propriedade pode aplicar uma estrutura de cor gradiente, devendo ser seliecionado o valor <em>"linear-gradiente"</em>, em seguida selecione no mínimo dois vlores de cores entre parênteses para que seja aplicada as cores em conjunto. Também podemos aplicar a porcentagem de aplicação da cor conforme exemplo completo abaixo:</p>
+    <p>background-image:<em><strong>linear-gradient</strong>(to top, #FECD6E, #FB9C40, #EE474F, #C43295, #913FAD, #4E6BD3 80%)</em>;</p>
+
+
+
+
+    <h2>PROPRIEDADE DE TEXTOS</h2>
+
+    <h3>font-family</h3>
+    <p>Transforma a fonte do texto conforme as opções selecionadas tais como: Arial, Times, Helvetica, dentre outras.</p>
+    <p>Recomendo que seja inserido mais de uma fonte conforme exemplo abaixo:</p> 
+    
+    <em>font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;</em>
+
+    <p>Caso o navegador não possua a primeira ele ira para segunda e assim por diante, desta forma seu texto manterá sua formatação em caso de um navegador não possuir a fonte aplicada.</p> 
+
+    <h3>font-size</h3>
+    <p>Esta propriedade define o tamanho da fonte, ao inserir os valors de px, em, pt, vh dentre outros.</p>
+
+    <h3>font-weight</h3>
+    <p>Este parametro aplica o peso da fontes, bem parecido com a tag &lt;strong&gt;, porem este parâmetro se aplica nas CSS sendo escolhido os seguintes valores: bold, bolder, normal, lighter.</p>
+
+    <h3>text-alingn</h3>
+    <p>Esta propriedade define o alinhamento do texto, podendo se aplicado as seguintes especificações: center, left, right, justify.</p>
+
+    <h3>text-decoration</h3>
+    <p>Esta propriedade define como será apresentado o elemento, com alguma decoração ou não. As especificações aplicadas são: underline, overline, line-through.</p>
+
+    <h3>text-shadow</h3>
+    <p>Aplica uma sombra no texto selecionado conforme exemplo abaixo:</p>
+    <p><em>text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.671);</em></p>
+
+    <h3>shorthand (font)</h3>
+    <p>A shorthand para fonte nada mais é que a junção de vários valores em apenas uma linha, devendo ser seguida a sequencia correta conforme exemplo abaiox:</p>
+    <p>Estrutura completa:</p>
+    <ul style="list-style-type:none">
+        <li>font-family: Arial, Helvetica, sans-serif;</li>
+        <li>font-weight: bolder;</li>
+        <li>font-size: 3em;</li>
+        <li>font-style: italic;</li>
+        
+        <li>Ordem para execução da shorthand: font-style-> font-weight-> font-family</li>
+        <li>font: italic bolder 3em arial, Helvetica, sans-serif;</li>
+    </ul>
+
+
+
+
+    <h2>PROPRIEDADE DE IMAGEM</h2>
+
+    <h3>background-attachment</h3>
+    <p>A background-attachment: Esta propriedade define se uma imagem de plano de fundo rola com o restante da página ou é fixa.</p>
+
+    <h3>background-image</h3>
+    <p>A propriedade background-image define uma ou mais imagens de plano de fundo para um elemento. Segue exemplo:</p>
+    <p><em>background-image: url(imagens/wallpaper006.jpg);</em></p>
+
+
+
+</body>
+</html>
