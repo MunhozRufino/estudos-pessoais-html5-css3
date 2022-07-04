@@ -69,7 +69,7 @@ a {
 }
 
 section {
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
     padding: 10px;
 
@@ -79,12 +79,14 @@ section {
 
 section div {
     display: inline-block;
-    margin: 5px;
+    margin: 2px;
     width: 250px;
     height: 300px;
     padding: 10px;
     border: 1px solid black;
     background-color: lightcyan;
-
+    vertical-align: top;
+    
+    
 
 }
