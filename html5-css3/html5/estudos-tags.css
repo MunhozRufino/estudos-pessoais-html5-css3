@@ -15,6 +15,7 @@ body {
     font-family: Sarabun, sans-serif;
     color: #6D7273;
     text-align: justify;
+    padding: 15px;
 }
 
 h1 {
@@ -69,25 +70,30 @@ a {
 }
 
 section {
-    max-width: 640px;
+    max-width: 800px;
     margin: auto;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: red;
+    
 }
 
-section div {
 
-    flex-basis: 200px;
-    margin: 2px;
-    width: 250px;
-    height: 300px;
+section div {
+    flex: 1;
+    min-width: 200px;
+    min-height: 200px;
+    margin: 10px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
     background-color: lightcyan;
-    vertical-align: top;
-    
-    
+}
 
+div h3 {
+    text-align: center;
+    font-weight: bolder;
 }
